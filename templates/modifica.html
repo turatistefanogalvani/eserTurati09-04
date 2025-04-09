@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Modidifica il tuo profilo</h1>
+    <form action="{{ url_for('modifica_profilo')}}" method="post"></form>
+        <p>Nome: </p>
+        <input type="text" id="nome" name="nome"><br>
+        <p>Cognome: </p>
+        <input type="text" id="cognome" name="cognome">
+        <p>Scuola: </p>
+        <input type="text" id="scuola" name="scuola"><br>
+        <p>Hobby: </p>
+        <input type="text" id="hobby" name="hobby"><br>
+        <br><br><button type="submit">Salva</button>
+        <br><br><a href="/">Torna alla home</a>
+</body>
+</html>
